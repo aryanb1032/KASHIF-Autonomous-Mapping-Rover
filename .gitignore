@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+rover_ws/build/
+rover_ws/install/
+rover_ws/log/
+rover_ws/src/sllidar_ros2/
+firmware/build/
+*.bag
+*.db3
+*.mcap
+.DS_Store
