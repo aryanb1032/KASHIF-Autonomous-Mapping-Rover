@@ -1,0 +1,33 @@
+test_corruption_and_reboot_do_not_jump_odometry (test_bridge.BridgeTests.test_corruption_and_reboot_do_not_jump_odometry) ... [INFO] [1794317549.400117681] [base_bridge]: Connected to /dev/pts/0
+ok
+test_hardware_calibration_lock (test_bridge.BridgeTests.test_hardware_calibration_lock) ... [INFO] [1794317549.406647146] [base_bridge]: Connected to /dev/pts/0
+ok
+test_pseudoterminal_command_timeout (test_bridge.BridgeTests.test_pseudoterminal_command_timeout) ... [INFO] [1794317549.590734526] [base_bridge]: Connected to /dev/pts/0
+ok
+test_telemetry_loss_stops_despite_fresh_commands (test_bridge.BridgeTests.test_telemetry_loss_stops_despite_fresh_commands) ... [INFO] [1794317550.249988602] [base_bridge]: Connected to /dev/pts/0
+ok
+test_bad_and_truncated_frames (test_core.CoreTests.test_bad_and_truncated_frames) ... ok
+test_command_timeout_and_invalid_float (test_core.CoreTests.test_command_timeout_and_invalid_float) ... ok
+test_crc_known_vector (test_core.CoreTests.test_crc_known_vector) ... ok
+test_encoder_rollover_both_directions (test_core.CoreTests.test_encoder_rollover_both_directions) ... ok
+test_exact_arc (test_core.CoreTests.test_exact_arc) ... ok
+test_frontier_is_known_free_reachable_and_clear (test_core.CoreTests.test_frontier_is_known_free_reachable_and_clear) ... ok
+test_lease_loss_latches_until_off_on (test_core.CoreTests.test_lease_loss_latches_until_off_on) ... ok
+test_no_frontiers_in_completed_enclosed_map (test_core.CoreTests.test_no_frontiers_in_completed_enclosed_map) ... ok
+test_rearm_does_not_reuse_old_command (test_core.CoreTests.test_rearm_does_not_reuse_old_command) ... ok
+test_round_trip (test_core.CoreTests.test_round_trip) ... ok
+test_sensor_fault_disarms (test_core.CoreTests.test_sensor_fault_disarms) ... ok
+test_small_lidar_blind_spot_is_not_an_exploration_target (test_core.CoreTests.test_small_lidar_blind_spot_is_not_an_exploration_target) ... ok
+test_stop_wins_over_later_nav_command (test_core.CoreTests.test_stop_wins_over_later_nav_command) ... ok
+test_velocity_limits (test_core.CoreTests.test_velocity_limits) ... ok
+test_late_goal_acceptance_is_cancelled_after_stop (test_explorer.ExplorerTests.test_late_goal_acceptance_is_cancelled_after_stop) ... ok
+test_off_on_does_not_overwrite_pending_goal (test_explorer.ExplorerTests.test_off_on_does_not_overwrite_pending_goal) ... ok
+test_starts_disarmed (test_explorer.ExplorerTests.test_starts_disarmed) ... ok
+test_replayed_old_scan_cannot_refresh_watchdog (test_gate.GateTests.test_replayed_old_scan_cannot_refresh_watchdog) ... ok
+test_requires_all_fresh_sources (test_gate.GateTests.test_requires_all_fresh_sources) ... ok
+test_w_o_q_over_a_real_terminal (test_keys.KeyTests.test_w_o_q_over_a_real_terminal) ... ok
+
+----------------------------------------------------------------------
+Ran 24 tests in 2.072s
+
+OK

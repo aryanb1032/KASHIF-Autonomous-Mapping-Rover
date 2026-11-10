@@ -1,0 +1,7 @@
+[0.120s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '<workspace>/work/debug/ros-root/opt/ros/jazzy' in the environment variable AMENT_PREFIX_PATH doesn't contain any 'local_setup.*' files.
+Starting >>> rover_description
+Finished <<< rover_description [0.06s]
+Starting >>> rover_bringup
+Finished <<< rover_bringup [0.85s]
+
+Summary: 2 packages finished [1.00s]

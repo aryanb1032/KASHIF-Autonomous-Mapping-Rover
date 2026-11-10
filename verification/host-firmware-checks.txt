@@ -1,0 +1,2 @@
+PASS: test_firmware.cpp and test_firmware_loop.cpp compiled with g++ -std=c++17 -Wall -Wextra -Werror and exited 0.
+PASS: bash -n for setup_pi.sh, flash_esp32.sh and tests/run_checks.sh.

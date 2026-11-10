@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "autonomous_distance_m": 0.42286698516741666,
+  "known_cells_before": 1500,
+  "known_cells_after": 21159,
+  "stop_cancels_exploration": true,
+  "topic_counts": {
+    "/cmd_vel_safe": 1776,
+    "/rover/armed": 1776,
+    "/scan": 317,
+    "/wheel/odom": 929,
+    "/odometry/filtered": 929,
+    "/map": 15
+  }
+}
