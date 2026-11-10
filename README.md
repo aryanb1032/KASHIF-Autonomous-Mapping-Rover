@@ -88,7 +88,7 @@ The model uses a 40 × 26 cm chassis and a conservative 44 × 38 cm Nav2 footpri
 Install Ubuntu 24.04 64-bit and configure the official [ROS 2 Jazzy apt repository](https://docs.ros.org/en/jazzy/Installation/Ubuntu-Install-Debs.html). This bundle does not install an operating system. Then, from the extracted folder:
 
 ```bash
-./setup_pi.sh
+bash ./setup_pi.sh
 source /opt/ros/jazzy/setup.bash
 source "$PWD/rover_ws/install/setup.bash"
 ```
@@ -102,8 +102,8 @@ In each new terminal, source ROS and the workspace again using the actual path w
 Install [Arduino CLI](https://arduino.github.io/arduino-cli/), then:
 
 ```bash
-./flash_esp32.sh --install-core
-./flash_esp32.sh --check
+bash ./flash_esp32.sh --install-core
+bash ./flash_esp32.sh --check
 ```
 
 `--check` compiles for `esp32:esp32:esp32` using Arduino ESP32 **2.0.17**; it never uploads. The pin map and binary target are not suitable for ESP32-S2/S3/C3 boards without changes.
@@ -111,7 +111,7 @@ Install [Arduino CLI](https://arduino.github.io/arduino-cli/), then:
 When you are ready, disconnect motor power and explicitly upload to the ESP32 port:
 
 ```bash
-./flash_esp32.sh --upload /dev/serial/by-id/YOUR_ESP32_DEVICE
+bash ./flash_esp32.sh --upload /dev/serial/by-id/YOUR_ESP32_DEVICE
 ```
 
 Use the firmware and ROS bridge from the same release; both use the CRC-framed serial protocol.
@@ -163,8 +163,8 @@ This produces a map image and YAML. The supplied launches perform mapping; saved
 After building the workspace:
 
 ```bash
-./tests/run_checks.sh
-./flash_esp32.sh --check
+bash ./tests/run_checks.sh
+bash ./flash_esp32.sh --check
 python3 tests/sim_smoke.py --log-dir /tmp/rover-navigation-test
 python3 tests/sim_smoke.py --autonomous --log-dir /tmp/rover-exploration-test
 ```
